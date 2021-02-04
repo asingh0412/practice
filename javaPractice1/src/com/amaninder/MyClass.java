@@ -6,6 +6,9 @@ public class MyClass {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Hello World!");
+		
+		ReverseNumberWhile rnw = new ReverseNumberWhile();
+		rnw.reverseNumberWhile(3456);
 
 	}
 
