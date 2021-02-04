@@ -10,6 +10,6 @@ public class ReverseNumberWhile {
 			originalNum = originalNum/10;
 		}
 		
-		System.out.println("Reverser Number with the while loop: " + reverseNum);
+		System.out.println("Reverse a Number with the while loop: " + reverseNum);
 	}
 }

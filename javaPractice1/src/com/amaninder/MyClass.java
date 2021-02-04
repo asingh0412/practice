@@ -9,6 +9,9 @@ public class MyClass {
 		
 		ReverseNumberWhile rnw = new ReverseNumberWhile();
 		rnw.reverseNumberWhile(3456);
+		
+		ReverseNumberRecursion rnr = new ReverseNumberRecursion();
+		rnr.reverseNumberRecursion(4567);
 
 	}
 
