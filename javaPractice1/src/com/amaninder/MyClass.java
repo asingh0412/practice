@@ -12,6 +12,9 @@ public class MyClass {
 		
 		ReverseNumberRecursion rnr = new ReverseNumberRecursion();
 		rnr.reverseNumberRecursion(4567);
+		
+		Palindrome pal = new Palindrome();
+		pal.isPalindrome("aba");
 
 	}
 

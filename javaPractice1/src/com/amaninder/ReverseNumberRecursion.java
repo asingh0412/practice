@@ -14,6 +14,8 @@ public class ReverseNumberRecursion {
 			System.out.print(originalNum%10);
 			reverseNumberRecursion(originalNum/10);
 		}
+		System.out.println("End of recursive number");
 	}
+	
 
 }
