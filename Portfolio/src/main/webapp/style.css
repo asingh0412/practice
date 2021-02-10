@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.nav{
+	background-color: #F0B27a;
+	padding: 20px;
+	/* list-style-type: none; */
+	text-align: center;
+}
+.nav li{
+	display: inline-block;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* li a:hover {
+	background-color: #11111;
+} */
