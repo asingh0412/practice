@@ -8,3 +8,15 @@ function myFunction(){
 	var z = x+y;
 	
 }
+function myFunction2() {
+	var x = document.getElementsByClassName("city");
+	for (var i = 0; i < x.length; i++) {
+	  x[i].style.display = "none";
+	}
+  }
+  function myFunction3() {
+	var x = document.getElementsByClassName("city");
+	for (var i = 0; i < x.length; i++) {
+	  x[i].style.display = "";
+	}
+  }
