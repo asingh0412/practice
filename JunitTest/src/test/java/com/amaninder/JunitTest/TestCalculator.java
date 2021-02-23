@@ -8,15 +8,21 @@ import org.junit.Test;
 public class TestCalculator  {
 	
 	Calculator c =null;
-	
+	CalculatorService service = new CalculatorService() {
+		public int add(int i, int j) {
+			// Created to create a stub
+			return 0;
+		}
+	};
 	@Before
 	public void setUp() {
-		c = new Calculator();
+		c = new Calculator(service);
 	}
 	
 	@Test
 	public void TestAdd() {
 		
-		assertEquals(5, c.add(2,3));
+		assertEquals(10, c.perform(2,3));
 	}
 }
+ 

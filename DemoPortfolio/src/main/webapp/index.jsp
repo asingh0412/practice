@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- CSS -->
-	<link type="stylesheet" href="css/styles.css">
+	<link href="<c:url value="resources/css/styles.css"/>" rel="stylesheet">
+	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="js/script.js"></script>
+	
     <title>Hello, world!</title>
   </head>
   <body>
@@ -19,12 +22,12 @@
 		  		<form class="form-control" action="add">
 				    <fieldset>
 				    <legend>Hello, world!</legend>
-				    	<input class="form-control" type="text" name="input1"><br>
-				    	<input class="form-control" type="text" name="input1"><br>
+				    	<input class="form-control" type="text" id="input1" name="input1"><br>
+				    	<input class="form-control" type="text" id="input2" onblur="addFunction(input1, input2)" name="input2"><br>
 				    	<button class="btn btn-primary" type="submit">Submit</button>
 					 </fieldset>  
 				  </form>
-				
+				  <p id="addFunc">Value</p>
 			</div>
 			<div class="col-3">
 		  		<form class="form-control" action="add">
@@ -35,32 +38,46 @@
 				    	<button class="btn btn-primary" type="submit">Submit</button>
 					 </fieldset>  
 				  </form>
-				
+				  
 			</div>
 			<div class="col-3">
-				<!-- <button class="btn btn-primary" onclick="dateFunction()">Button</button>-->
+				<h1 id="demo"></h1>
 		  		<p id="date"></p>
 		  		<p id="styles" onclick="styleFunction()">This is a <em>Styled</em> paragraph</p>
 		  		<button class="btn btn-warning" onclick="styleFunction()">Button</button>
 			</div>
-			
 		</div>
-	    
     </div>
-	
-	
-	
-	<script>
-		/* function dateFunction(){
+    <script src="<c:url value="/resources/js/scripts.js" />"></script>
+    <!-- <script src="<c:url value="/js/script.js" />" type="text/javascript"></script>
+	  <script src="/resources/js/script.js">
+	/* //self invoking function 
+	(function (){
 		document.getElementById("date").innerHTML = Date();
-	}
-	dateFunction();
+	})();
+	//dateFunction();
 	function styleFunction(){
 		alert("thihs is the ");
 		
 		document.getElementById("styles").style.fontSize = "25px" ;
 		document.getElementById("styles").style.color = "red" ;
-	}  */
+	} 
+	function addFunction(a,b){
+		//alert("alert");
+		var x = document.getElementById("input1");
+		var y = document.getElementById("input2");
+		document.getElementById("addFunc").innerHTML =parseInt(a)+parseInt(b); 
+	}
+	
+	setInterval(myTimeFunction, 1000);
+	function myTimeFunction(){
+		let d = new Date();
+		document.getElementById("demo").innerHTML = 
+		d.getHours()+ ":" +
+		d.getMinutes()+ ":"+
+		d.getSeconds();
+		
+	} */
 	</script>
 	
     <!-- Optional JavaScript -->

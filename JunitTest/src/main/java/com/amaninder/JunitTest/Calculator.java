@@ -8,7 +8,13 @@ public class Calculator {
 	// then you mock it / fake service. It is a duplicate service. 
 	
 	CalculatorService service ;
-	public int add(int i, int j) {
+	
+	//to make a fake object.
+	public Calculator(CalculatorService service) {
+		this.service = service;
+	}
+	 
+	public int perform (int i, int j) {  // just for the sake of (2+3) --> (i+j)*i
 		return service.add(i, j);
 	}
 

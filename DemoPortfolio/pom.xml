@@ -2,11 +2,15 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.amaninder</groupId>
-  <artifactId>PortfolioJava</artifactId>
+  <artifactId>DemoPortfolio</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>PortfolioJava Maven Webapp</name>
+  <name>DemoPortfolio Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <properties>
+    <maven.compiler.target>15</maven.compiler.target>
+    <maven.compiler.source>15</maven.compiler.source>
+	</properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -38,6 +42,6 @@
 		</dependency>
   </dependencies>
   <build>
-    <finalName>PortfolioJava</finalName>
+    <finalName>DemoPortfolio</finalName>
   </build>
 </project>
