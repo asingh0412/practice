@@ -12,28 +12,24 @@
 		document.getElementById("styles").style.color = "red" ;
 	}
 	function addFunction(a,b){
-		//alert("alert");
-		var x = document.getElementById("input1");
-		var y = document.getElementById("input2");
-		document.getElementById("addFunc").innerHTML =parseInt(a)+parseInt(b); 
+		
+		var x = parseInt(document.getElementById("input1").value);
+		var y = parseInt(document.getElementById("input2").value);
+		
+		document.getElementById("addValue").innerHTML =x+y; 
 	}
 	
 	//self invoking function 
 	(function (){
 		document.getElementById("date").innerHTML = Date();
 	})();
+	
 	//dateFunction();
 	function styleFunction(){
-		alert("thihs is the ");
+		alert("this is the ");
 		
 		document.getElementById("styles").style.fontSize = "25px" ;
 		document.getElementById("styles").style.color = "red" ;
-	} 
-	function addFunction(a,b){
-		//alert("alert");
-		var x = document.getElementById("input1");
-		var y = document.getElementById("input2");
-		document.getElementById("addFunc").innerHTML =parseInt(a)+parseInt(b); 
 	}
 	
 	setInterval(myTimeFunction, 1000);

@@ -27,7 +27,7 @@
 				    	<button class="btn btn-primary" type="submit">Submit</button>
 					 </fieldset>  
 				  </form>
-				  <p id="addFunc">Value</p>
+				  <p id="addValue">Value</p>
 			</div>
 			<div class="col-3">
 		  		<form class="form-control" action="add">
@@ -49,37 +49,7 @@
 		</div>
     </div>
     <script src="<c:url value="/resources/js/scripts.js" />"></script>
-    <!-- <script src="<c:url value="/js/script.js" />" type="text/javascript"></script>
-	  <script src="/resources/js/script.js">
-	/* //self invoking function 
-	(function (){
-		document.getElementById("date").innerHTML = Date();
-	})();
-	//dateFunction();
-	function styleFunction(){
-		alert("thihs is the ");
-		
-		document.getElementById("styles").style.fontSize = "25px" ;
-		document.getElementById("styles").style.color = "red" ;
-	} 
-	function addFunction(a,b){
-		//alert("alert");
-		var x = document.getElementById("input1");
-		var y = document.getElementById("input2");
-		document.getElementById("addFunc").innerHTML =parseInt(a)+parseInt(b); 
-	}
-	
-	setInterval(myTimeFunction, 1000);
-	function myTimeFunction(){
-		let d = new Date();
-		document.getElementById("demo").innerHTML = 
-		d.getHours()+ ":" +
-		d.getMinutes()+ ":"+
-		d.getSeconds();
-		
-	} */
-	</script>
-	
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
