@@ -15,8 +15,8 @@
 		
 		var x = parseInt(document.getElementById("input1").value);
 		var y = parseInt(document.getElementById("input2").value);
-		
-		document.getElementById("addValue").innerHTML =x+y; 
+		document.getElementById("addValue").innerHTML = parseInt(a.value)+ parseInt(b.value);
+		//document.getElementById("addValue").innerHTML =x+y; 
 	}
 	
 	//self invoking function 

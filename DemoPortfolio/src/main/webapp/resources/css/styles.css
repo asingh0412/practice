@@ -1,9 +1,33 @@
 @charset "UTF-8";
+/*
+	Colors Pallets: 
+	#d8e2dc, #ffe5d9 ,#ffcad4, #f4acb7, #9d8189  
+	or
+	#c9e4ca ,#87bba2, #55828b, #3b6064, #364958
+*/
 fieldset{
-	background-color:#eeeeee;
+	background-color:#c9e4ca ;
+	padding: 20px;
+	margin: 5px;
+	
 }
 legend {
-  background-color: gray;
-  color: white;
+  
+  color:#364958 !important;
   padding: 5px 10px;
+  
+}
+h1{
+	background-color: #c9e4ca;
+	padding: 5px;
+	color: #3b6064;
+}
+button{
+	margin: 10px !important;
+	background-color: #3b6064 !important;
+	color: white !important;
+	border: none ! important;
+}
+body, .form-control{
+	background-color: #faf3ee;
 }
