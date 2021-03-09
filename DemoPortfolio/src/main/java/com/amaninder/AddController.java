@@ -1,36 +1,41 @@
 package com.amaninder;
 
-import java.text.DateFormat;
-import java.util.Date;
-import java.util.Locale;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.amaninder.service.AddService;
 
 @Controller
 public class AddController {
+	
+	@Autowired
+	AddService as;
 	
 	@RequestMapping(value = "/add")
 //	public void add() {
 //		System.out.println("I am here");
 		//return "Display.jsp";
-	public ModelAndView add(HttpServletRequest request, HttpServletResponse response) {
+	public ModelAndView add(@RequestParam("input1") int i ,@RequestParam("input2") int j ) { //HttpServletRequest request, HttpServletResponse response) {
 		
-		int i = Integer.parseInt(request.getParameter("input1"));
-		int j = Integer.parseInt(request.getParameter("input2"));
-		int k = i+j;
+		//int i = Integer.parseInt(request.getParameter("input1"));
+		//int j = Integer.parseInt(request.getParameter("input2"));
 		
-		ModelAndView mv = new ModelAndView();
+		//AddService as = new AddService();
+		
+		int k = as.add(i, j);
+		
+		// All the logic should be written in the service class. 
+		// rather than in controller. 
+//		int k = i+j;
+//		
+		ModelAndView mv = new ModelAndView();		
 		mv.setViewName("Display");
 		mv.addObject("result", k);
 		return mv;
-	}
+}
 	
 //	@RequestMapping(value = "/", method = RequestMethod.GET)
 //	public String home(Locale locale, Model model) {

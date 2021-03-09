@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" isELIgnored="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Result is <%= request.getAttribute("result") %> </h1>
+		<h1>Result is ${result} <%--  <%= request.getAttribute("result") %>--%> </h1>
 	
 	</div>
 	
